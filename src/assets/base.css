@@ -1,0 +1,15 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  position: relative;
+  margin: 0;
+  font-weight: normal;
+}
+
+:root,
+html,
+body,
+#app {
+  height: 100vh;
+}
