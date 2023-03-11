@@ -43,7 +43,6 @@
     "readonly": true,
     "ref": true,
     "resolveComponent": true,
-    "scale": true,
     "shallowReactive": true,
     "shallowReadonly": true,
     "shallowRef": true,

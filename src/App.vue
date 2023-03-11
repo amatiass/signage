@@ -1,12 +1,7 @@
 <script setup lang="ts">
-import { scale } from './utils/util'
-watch(
-  () => scale.value,
-  (val: number) => (document.documentElement.style.fontSize = `${val * 16}px`),
-  { immediate: true }
-)
+import { scale } from './scale'
 </script>
-
 <template>
   <Main bgi-bg.jpg wfull hfull bgfull />
+  <div fixed top-0 left-0 text-60 text-white>{{ scale }}</div>
 </template>

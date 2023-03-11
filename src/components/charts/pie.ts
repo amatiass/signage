@@ -1,4 +1,6 @@
-export const pie = {
+import { scale } from '~/scale'
+
+export const pie = computed(() => ({
   //  backgroundColor: '#00265f',
   tooltip: {
     trigger: 'axis',
@@ -21,7 +23,7 @@ export const pie = {
         show: true,
         lineStyle: {
           color: 'rgba(255,255,255,.1)',
-          width: px(2),
+          width: 2 * scale.value,
           type: 'solid'
         }
       },
@@ -34,7 +36,7 @@ export const pie = {
         show: true,
         splitNumber: 15,
         color: 'rgba(255,255,255,.6)',
-        fontSize: px(24)
+        fontSize: 24 * scale.value
       }
     }
   ],
@@ -44,7 +46,7 @@ export const pie = {
       axisLabel: {
         show: true,
         color: 'rgba(255,255,255,.6)',
-        fontSize: px(24)
+        fontSize: 24 * scale.value
       },
       axisTick: {
         show: false
@@ -53,7 +55,7 @@ export const pie = {
         show: true,
         lineStyle: {
           color: 'rgba(255,255,255,.1	)',
-          width: px(2),
+          width: 2 * scale.value,
           type: 'solid'
         }
       },
@@ -72,8 +74,8 @@ export const pie = {
       itemStyle: {
         color: '#2f89cf',
         opacity: 1,
-        borderRadius: px(10)
+        borderRadius: 10 * scale.value
       }
     }
   ]
-}
+}))

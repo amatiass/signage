@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { pie } from './charts/pie'
 import { useDateFormat, useNow } from '@vueuse/core'
+
 const time = useDateFormat(useNow(), 'YYYY年MM月DD日 HH时mm分ss秒')
 </script>
 
@@ -14,15 +15,15 @@ const time = useDateFormat(useNow(), 'YYYY年MM月DD日 HH时mm分ss秒')
     </div>
     <div w3840 h1900 flex justify-around m-auto>
       <div w1000 flex="~ col" justify-between>
-        <div wfull h600 class="chartBorder"><Echarts :option="pie" w-900 h-500 m-50 /></div>
-        <div wfull h600 class="chartBorder"><Echarts :option="pie" w-900 h-500 m-50 /></div>
-        <div wfull h600 class="chartBorder"><Echarts :option="pie" w-900 h-500 m-50 /></div>
+        <div class="chartBorder"><Echarts :option="pie" w-900 h-500 m-50 /></div>
+        <div class="chartBorder"><Echarts :option="pie" w-900 h-500 m-50 /></div>
+        <div class="chartBorder"><Echarts :option="pie" w-900 h-500 m-50 /></div>
       </div>
       <div w1500 flex="~ col" justify-between></div>
       <div w1000 flex="~ col" justify-between>
-        <div wfull h600 class="chartBorder"><Echarts :option="pie" w-900 h-500 m-50 /></div>
-        <div wfull h600 class="chartBorder"><Echarts :option="pie" w-900 h-500 m-50 /></div>
-        <div wfull h600 class="chartBorder"><Echarts :option="pie" w-900 h-500 m-50 /></div>
+        <div class="chartBorder"><Echarts :option="pie" w-900 h-500 m-50 /></div>
+        <div class="chartBorder"><Echarts :option="pie" w-900 h-500 m-50 /></div>
+        <div class="chartBorder"><Echarts :option="pie" w-900 h-500 m-50 /></div>
       </div>
     </div>
   </div>
@@ -30,7 +31,7 @@ const time = useDateFormat(useNow(), 'YYYY年MM月DD日 HH时mm分ss秒')
 
 <style scoped lang="less">
 .chartBorder {
-  --at-apply: b-1 b-solid b-[#19ba8b2b];
+  --at-apply: b-1 b-solid b-[#19ba8b2b] wfull h600;
   &::before {
     --at-apply: 'w-20 h-20 absolute top-0 left-0  content-empty';
     --at-apply: 'b-t-2 b-t-solid b-t-#02a6b5';

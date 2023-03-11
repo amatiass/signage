@@ -1,6 +1,4 @@
-import { designWidth } from '~/design'
-const { width } = useWindowSize()
-export const scale = computed(() => width.value / designWidth)
+import { scale } from '~/scale'
 /**
  * 将像素按比例转换为正确的值
  * @export
